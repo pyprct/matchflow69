@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Match Flow ⚽</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="logo-title">
-      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Football Logo" class="logo">
-      <h1>MATCH FLOW</h1>
-    </div>
-    <p>Live Football Scores • Updates & Fixtures!</p>
-
-    <div class="socials">
-      <a href="https://www.youtube.com/@uefa" target="_blank" title="UEFA YouTube">
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="icon">
-      </a>
-    </div>
+    <h1>⚽ MATCHFLOW</h1>
+    <p class="tagline">Your gateway to global football action</p>
   </header>
 
-  <main>
-    <div class="controls">
-      <input type="text" id="searchInput" placeholder="Search team...">
-      <select id="competitionSelect">
-        <option value="all">All Competitions</option>
-      </select>
-      <button id="resetBtn">Reset</button>
-    </div>
+  <section class="controls">
+    <input type="text" id="search" placeholder="Search a team...">
+    <select id="filter">
+      <option value="all">All Leagues</option>
+      <option value="Premier League">Premier League</option>
+      <option value="La Liga">La Liga</option>
+      <option value="Serie A">Serie A</option>
+      <option value="Bundesliga">Bundesliga</option>
+      <option value="UEFA Champions League">UEFA Champions League</option>
+    </select>
+    <button id="reset" class="btn">Reset</button>
+  </section>
 
-    <div id="matches" class="matches-container"></div>
-  </main>
+  <main id="matches"></main>
 
   <footer>
-    © 2025 <b>Match Flow</b> | devaloped by SRAVAN
+    <p>© 2025 MatchFlow | Built with ❤️ for true football fans</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
